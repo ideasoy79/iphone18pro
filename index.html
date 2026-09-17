@@ -237,18 +237,29 @@
   }
 
   /* ── 사과따기 ────────────────────────────────────── */
-  .apple-band{
+  .apple-card{
     margin-top:22px;border:1px solid rgba(140,44,64,.55);border-radius:var(--radius-l);
-    background:linear-gradient(160deg,rgba(140,44,64,.30),rgba(20,18,23,.9) 65%);
-    padding:20px;display:flex;gap:16px;align-items:flex-start;
+    background:linear-gradient(160deg,rgba(140,44,64,.30),rgba(20,18,23,.92) 62%);
+    overflow:hidden;
   }
-  .apple-band svg{flex:none;margin-top:2px}
-  .apple-band .t{font-family:var(--display);font-weight:900;font-size:19px;letter-spacing:-.02em;margin:0 0 7px}
-  .apple-band p{margin:0;font-size:12.5px;color:#D3C9C6;line-height:1.55}
-  .apple-band .cond{
-    display:inline-block;margin-top:10px;font-family:var(--mono);font-size:10.5px;
-    letter-spacing:.06em;color:#F0C9D0;border:1px solid rgba(240,201,208,.4);
-    border-radius:999px;padding:4px 10px;
+  .apple-card .shot{
+    border:0;border-radius:0;border-bottom:1px solid rgba(140,44,64,.45);
+    aspect-ratio:3/2;
+  }
+  .apple-card .body{padding:20px}
+  .apple-card .t{
+    font-family:var(--display);font-weight:900;font-size:20px;
+    letter-spacing:-.02em;margin:0 0 8px;
+  }
+  .apple-card p{margin:0;font-size:12.5px;color:#D3C9C6;line-height:1.55}
+  .gifts{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
+  .gifts span{
+    font-size:11.5px;color:#F0C9D0;background:rgba(140,44,64,.35);
+    border:1px solid rgba(240,201,208,.28);border-radius:999px;padding:5px 11px;
+  }
+  .gift-note{
+    margin-top:11px;font-family:var(--mono);font-size:10.5px;
+    letter-spacing:.05em;color:#B9A8AB;
   }
 
   /* ── 스펙 ────────────────────────────────────────── */
@@ -344,11 +355,11 @@
     <p class="lede">화면으로 볼지, 손으로 쥐어볼지. 다사점은 두 가지 방법을 모두 준비했습니다.</p>
 
     <div class="shot hero">
-      <img src="img/experience-zone.jpg" alt="다사점 체험존" onerror="this.remove()">
+      <img data-img="hero" alt="다사점 체험존" hidden>
       <div class="ph">
         <div class="tag">Photo 01 · 4:3.2</div>
         <div class="what">다사점 체험존</div>
-        <div class="how">img/experience-zone.jpg<br>매장 직접 촬영 · 가로 1600px 이상</div>
+        <div class="how">맨 아래 IMAGES.hero 에 파일명 입력<br>매장 직접 촬영 · 가로 1600px 이상</div>
       </div>
     </div>
 
@@ -426,16 +437,26 @@
       </a>
     </div>
 
-    <div class="apple-band">
-      <svg width="34" height="38" viewBox="0 0 34 38" aria-hidden="true">
-        <path d="M17 9c-1 0-2.2-.4-3.4-.4C7.8 8.6 3 13.6 3 21.2 3 28.4 8.2 36 13.4 36c2 0 2.8-1.1 5.3-1.1s3.1 1.1 5.2 1.1C29.4 36 34 28.6 34 21.4c0-7.6-4.9-12.8-10.6-12.8-1.3 0-2.6.4-3.6.4z" fill="#8C2C40" opacity=".92"/>
-        <path d="M17.6 8.4C17.6 4.6 20 1.4 23.4.6c.5 3.6-2.1 7.5-5.8 7.8z" fill="#3E7A4F"/>
-      </svg>
-      <div>
+    <div class="apple-card">
+      <div class="shot">
+        <img data-img="tree" alt="다사점에 설치된 사과따기 체험 나무" hidden>
+        <div class="ph">
+          <div class="tag">Photo 03 · 3:2</div>
+          <div class="what">매장 사과나무</div>
+          <div class="how">맨 아래 IMAGES.tree 에 파일명 입력<br>캡슐 사과가 여러 개 보이게 · 가로 1500px</div>
+        </div>
+      </div>
+      <div class="body">
         <p class="t">체험하고, 사과 한 번 따 가세요</p>
-        <p>체험 후 다사점 단골 고객으로 등록하시면 <b>사과따기 체험</b>에 참여하실 수 있습니다.
-        나무에 달린 사과를 직접 골라 따시면 됩니다 — 안에 선물이 들어 있습니다.</p>
-        <span class="cond">선물 구성 · 수량 [내용 입력]</span>
+        <p>매장 벽면에 사과나무가 있습니다. 체험 후 다사점 단골 고객으로 등록하시면
+        캡슐 사과를 직접 골라 따실 수 있습니다 — 안에 사은품이 들어 있습니다.</p>
+        <div class="gifts">
+          <span>유선 이어폰</span>
+          <span>맥세이프 카드지갑</span>
+          <span>가정용 충전기</span>
+          <span>데이터 케이블</span>
+        </div>
+        <p class="gift-note">사과마다 사은품이 다르며, 수량 소진 시 종료됩니다.</p>
       </div>
     </div>
 
@@ -451,11 +472,11 @@
     <h2>Pro와 Pro Max,<br>뭐가 다를까요?</h2>
 
     <div class="shot wide">
-      <img src="img/color-lineup.jpg" alt="색상 4종 실물 비교" onerror="this.remove()">
+      <img data-img="colors" alt="색상 4종 실물 비교" hidden>
       <div class="ph">
         <div class="tag">Photo 02 · 16:10</div>
         <div class="what">실물 색상 비교 컷</div>
-        <div class="how">img/color-lineup.jpg<br>매장 조명 아래 4색 나란히 · 동일 각도</div>
+        <div class="how">맨 아래 IMAGES.colors 에 파일명 입력<br>매장 조명 아래 4색 나란히 · 동일 각도</div>
       </div>
     </div>
 
@@ -522,10 +543,45 @@
      ════════════════════════════════════════════════════ */
   var LINKS = {
     apple : "https://www.apple.com/kr/iphone-18-pro/",
-    naver : "",          // ← 네이버 예약 URL
+    naver : "https://m.booking.naver.com/booking/13/bizes/394424/items/8070382?area=pll&lang=ko&theme=place",
     tel   : ""           // ← 매장 전화번호 (예: "053-000-0000"), 비워두면 표시 안 됨
   };
+
+  // 사진 이름 — 확장자 없이 이름만 적으면 됩니다.
+  // 저장소 맨 위에 있든 img 폴더 안에 있든, .jpg/.JPG/.png 어느 쪽이든 알아서 찾습니다.
+  var IMAGES = {
+    hero   : "experience-zone",   // 체험존        가로 4:3.2
+    colors : "color-lineup",      // 색상 4종 비교  가로 16:10
+    tree   : "apple-tree"         // 사과나무       가로 3:2
+  };
   /* ════════════════════════════════════════════════════ */
+
+  // 확장자와 폴더 위치를 순서대로 시도하고, 다 실패하면 가이드 박스를 남깁니다.
+  var FOLDERS = ["", "img/"];
+  var EXTS    = [".jpg", ".JPG", ".jpeg", ".png", ".PNG", ".webp"];
+
+  document.querySelectorAll("[data-img]").forEach(function(el){
+    var name = IMAGES[el.getAttribute("data-img")];
+    if (!name) { el.remove(); return; }
+
+    var tries = [];
+    if (/\.[a-z0-9]+$/i.test(name)) {
+      FOLDERS.forEach(function(f){ tries.push(f + name); });
+    } else {
+      FOLDERS.forEach(function(f){
+        EXTS.forEach(function(x){ tries.push(f + name + x); });
+      });
+    }
+
+    var i = 0;
+    el.onload  = function(){ el.hidden = false; };
+    el.onerror = function(){
+      i++;
+      if (i < tries.length) { el.src = tries[i]; }
+      else { el.remove(); }
+    };
+    el.src = tries[0];
+  });
 
   var step  = 1;
   var names = {1:"출시 안내", 2:"체험 방법", 3:"모델 선택"};
@@ -541,8 +597,11 @@
   var naverLink  = document.getElementById("naverLink");
   var naverLabel = document.getElementById("naverLabel");
   if (LINKS.naver) {
-    naverLink.href = LINKS.naver;
-    book.href = LINKS.naver;
+    // 예약 화면이 항상 '오늘' 날짜로 열리도록 startDate를 붙입니다(한국 시간 기준).
+    var today = new Date().toLocaleDateString("sv-SE", { timeZone: "Asia/Seoul" });
+    var url = LINKS.naver + (LINKS.naver.indexOf("?") > -1 ? "&" : "?") + "startDate=" + today;
+    naverLink.href = url;
+    book.href = url;
   } else {
     naverLink.removeAttribute("href");
     naverLink.classList.remove("solid");
