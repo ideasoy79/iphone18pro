@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+
+<title>iPhone 18 Pro 체험 안내 | SKT 다사점</title>
+<meta name="description" content="SK텔레콤 PS&amp;M 다사점 · 대실역 도보 3분. 온라인으로 먼저 둘러보고, 실물은 매장에서 직접 확인하세요. 방문 예약 가능.">
+<meta name="theme-color" content="#08070A">
+
+<!-- 카카오톡·네이버 공유 미리보기 -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SKT 다사점">
+<meta property="og:title" content="iPhone 18 Pro, 먼저 보고 결정하세요">
+<meta property="og:description" content="온라인으로 둘러보고, 실물은 다사점에서. 체험 후 단골 등록 시 사과따기 체험.">
+<meta property="og:url" content="https://ideasoy79.github.io/iphone18pro/">
+<meta property="og:image" content="https://ideasoy79.github.io/iphone18pro/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2308070A'/%3E%3Ccircle cx='16' cy='17' r='8' fill='%23FF5A1F'/%3E%3Cpath d='M16 9c0-3 2-5 5-5 0 3-2 5-5 5z' fill='%233E7A4F'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500;700;800;900&family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+
+<style>
+  :root{
+    color-scheme:dark;
+    padding-top:env(safe-area-inset-top,0px);
+
+    --ink:#08070A;
+    --surface:#141217;
+    --surface-2:#1D1A21;
+    --line:rgba(255,255,255,.10);
+    --line-strong:rgba(255,255,255,.18);
+    --text:#F6F3EF;
+    --muted:#9B948C;
+    --accent:#FF5A1F;
+    --accent-soft:rgba(255,90,31,.14);
+    --burgundy:#8C2C40;
+    --radius-l:26px;
+    --radius-m:18px;
+    --radius-s:12px;
+    --display:"Gothic A1","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    --body:"Noto Sans KR","Apple SD Gothic Neo",sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,monospace;
+  }
+
+  *{box-sizing:border-box}
+  [hidden]{display:none!important}
+  img{max-width:100%}
+  body{
+    margin:0;
+    background:var(--ink);
+    color:var(--text);
+    font-family:var(--body);
+    font-size:15px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .shell{
+    max-width:460px;
+    margin:0 auto;
+    padding:0 20px 132px;
+    background:var(--ink);
+  }
+
+  /* ── 상단 진행바 ─────────────────────────────────── */
+  .topbar{
+    position:sticky;
+    top:env(safe-area-inset-top,0px);
+    z-index:40;
+    margin:0 -20px;
+    padding:14px 20px 12px;
+    background:linear-gradient(180deg,rgba(8,7,10,.96) 62%,rgba(8,7,10,0));
+    -webkit-backdrop-filter:blur(14px);
+    backdrop-filter:blur(14px);
+  }
+  .story{
+    display:flex;align-items:center;gap:12px;
+    border:1px solid var(--line);border-radius:999px;
+    padding:9px 16px 9px 10px;background:rgba(29,26,33,.72);
+  }
+  .mark{
+    flex:none;width:32px;height:32px;border-radius:50%;
+    display:grid;place-items:center;
+    background:var(--accent-soft);border:1px solid rgba(255,90,31,.42);
+    font-family:var(--mono);font-size:12px;color:var(--accent);
+  }
+  .story-body{flex:1;min-width:0}
+  .story-label{
+    display:flex;align-items:baseline;justify-content:space-between;gap:10px;
+    font-size:12.5px;color:#D8D2CB;
+  }
+  .story-label b{font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .story-label span{font-family:var(--mono);font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
+  .segs{display:flex;align-items:center;gap:6px;margin-top:7px;height:3px}
+  .seg{flex:1;height:3px;border-radius:2px;background:rgba(255,255,255,.16);overflow:hidden}
+  .seg i{display:block;height:100%;width:0;background:var(--text);transition:width .45s ease}
+  .seg.done i,.seg.now i{width:100%}
+
+  /* ── 타이포 ──────────────────────────────────────── */
+  .eyebrow{
+    font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--muted);margin:26px 0 10px;
+  }
+  h1{
+    font-family:var(--display);font-weight:900;
+    font-size:clamp(33px,9.5vw,41px);line-height:1.12;letter-spacing:-.035em;
+    text-wrap:balance;margin:0 0 14px;
+  }
+  h2{
+    font-family:var(--display);font-weight:900;
+    font-size:clamp(27px,7.6vw,34px);line-height:1.16;letter-spacing:-.03em;
+    text-wrap:balance;margin:0 0 18px;
+  }
+  .lede{color:#C6BFB8;font-size:15px;margin:0 0 22px}
+  .kicker{
+    display:inline-flex;align-items:center;gap:8px;
+    border:1px solid var(--line-strong);border-radius:999px;
+    padding:6px 14px 6px 6px;font-size:12.5px;color:#D8D2CB;margin:22px 0 16px;
+  }
+  .kicker em{
+    font-style:normal;background:var(--accent);color:#fff;
+    font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.06em;
+    padding:3px 9px;border-radius:999px;
+  }
+  .storeline{font-size:12.5px;color:var(--muted);margin:0 0 12px}
+
+  /* ── 사진 영역 ───────────────────────────────────
+     img/ 폴더에 파일을 넣으면 사진이 뜨고,
+     파일이 없으면 아래 촬영 가이드 박스가 대신 보입니다. */
+  .shot{
+    position:relative;border-radius:var(--radius-l);border:1px solid var(--line);
+    background:
+      repeating-linear-gradient(135deg,rgba(255,255,255,.028) 0 2px,transparent 2px 11px),
+      radial-gradient(120% 90% at 50% 0%,#221E26 0%,#111015 70%);
+    display:grid;place-items:center;text-align:center;padding:22px;overflow:hidden;
+  }
+  .shot.hero{aspect-ratio:4/3.2}
+  .shot.wide{aspect-ratio:16/10}
+  .shot img{
+    position:absolute;inset:0;width:100%;height:100%;
+    object-fit:cover;z-index:2;
+  }
+  .shot .ph::before,.shot .ph::after{
+    content:"";position:absolute;width:16px;height:16px;
+    border:2px solid var(--accent);opacity:.5;
+  }
+  .shot .ph::before{top:14px;left:14px;border-right:0;border-bottom:0;border-radius:4px 0 0 0}
+  .shot .ph::after{bottom:14px;right:14px;border-left:0;border-top:0;border-radius:0 0 4px 0}
+  .shot .tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;color:var(--accent);text-transform:uppercase}
+  .shot .what{font-family:var(--display);font-weight:700;font-size:16px;margin-top:8px;letter-spacing:-.01em}
+  .shot .how{font-size:11.5px;color:var(--muted);margin-top:5px;line-height:1.5}
+
+  /* ── 카드 ────────────────────────────────────────── */
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+  @media (max-width:359px){.grid{grid-template-columns:1fr}}
+
+  .fact{
+    border:1px solid var(--line);border-radius:var(--radius-m);
+    background:var(--surface);padding:16px 16px 18px;
+  }
+  .fact .k{font-size:11.5px;color:var(--muted)}
+  .fact .v{
+    font-family:var(--display);font-weight:800;font-size:22px;line-height:1.25;
+    letter-spacing:-.02em;margin-top:8px;font-variant-numeric:tabular-nums;
+  }
+  .fact .n{font-size:11px;color:var(--accent);margin-top:7px;line-height:1.45}
+
+  .nav-card{
+    border:1px solid var(--line);border-radius:var(--radius-m);
+    background:var(--surface);overflow:hidden;
+    display:flex;flex-direction:column;text-align:left;
+    padding:0;color:inherit;font:inherit;cursor:pointer;
+  }
+  .nav-card .top{padding:16px 16px 18px;flex:1}
+  .nav-card .t{font-family:var(--display);font-weight:800;font-size:16px;letter-spacing:-.015em}
+  .nav-card .d{font-size:12px;color:var(--muted);margin-top:6px}
+  .nav-card .go{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:13px 16px;font-weight:700;font-size:13.5px;color:#fff;
+  }
+  .nav-card.orange .go{background:var(--accent)}
+  .nav-card.wine .go{background:var(--burgundy)}
+  .nav-card:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+  /* ── 체험 두 갈래 ────────────────────────────────── */
+  .route{
+    border:1px solid var(--line);border-radius:var(--radius-l);
+    background:var(--surface);padding:20px;margin-top:14px;
+  }
+  .route.live{
+    border-color:rgba(255,90,31,.42);
+    background:linear-gradient(180deg,rgba(255,90,31,.07),var(--surface) 60%);
+  }
+  .route .rt{
+    font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--muted);
+  }
+  .route.live .rt{color:var(--accent)}
+  .route h3{
+    font-family:var(--display);font-weight:900;font-size:24px;
+    letter-spacing:-.025em;line-height:1.2;margin:9px 0 10px;
+  }
+  .route > p{font-size:13.5px;color:#C6BFB8;margin:0 0 16px}
+  .route ul{margin:0 0 18px;padding:0;list-style:none;display:grid;gap:9px}
+  .route li{
+    font-size:12.5px;color:var(--muted);line-height:1.5;
+    padding-left:18px;position:relative;
+  }
+  .route li::before{
+    content:"";position:absolute;left:2px;top:8px;
+    width:6px;height:6px;border-radius:50%;background:var(--line-strong);
+  }
+  .route.live li::before{background:var(--accent)}
+  .route li b{color:#D8D2CB;font-weight:500}
+
+  .linkbtn{
+    display:flex;align-items:center;justify-content:space-between;gap:10px;
+    width:100%;text-decoration:none;font:inherit;
+    font-family:var(--display);font-weight:800;font-size:15px;letter-spacing:-.01em;
+    border-radius:999px;padding:15px 22px;border:1px solid transparent;cursor:pointer;
+  }
+  .linkbtn.ghost{background:var(--surface-2);color:var(--text);border-color:var(--line-strong)}
+  .linkbtn.solid{background:var(--accent);color:#fff}
+  .linkbtn.off{background:var(--surface-2);color:#6F6962;border-color:var(--line);cursor:default}
+  .linkbtn:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+  .linkbtn .arr{font-family:var(--mono);font-size:14px;font-weight:500}
+
+  .gap{
+    margin-top:14px;border-left:2px solid var(--burgundy);
+    padding:4px 0 4px 14px;font-size:12.5px;color:#C6BFB8;line-height:1.6;
+  }
+  .gap b{
+    display:block;font-family:var(--display);font-weight:800;font-size:14px;
+    color:var(--text);margin-bottom:4px;letter-spacing:-.01em;
+  }
+
+  /* ── 사과따기 ────────────────────────────────────── */
+  .apple-band{
+    margin-top:22px;border:1px solid rgba(140,44,64,.55);border-radius:var(--radius-l);
+    background:linear-gradient(160deg,rgba(140,44,64,.30),rgba(20,18,23,.9) 65%);
+    padding:20px;display:flex;gap:16px;align-items:flex-start;
+  }
+  .apple-band svg{flex:none;margin-top:2px}
+  .apple-band .t{font-family:var(--display);font-weight:900;font-size:19px;letter-spacing:-.02em;margin:0 0 7px}
+  .apple-band p{margin:0;font-size:12.5px;color:#D3C9C6;line-height:1.55}
+  .apple-band .cond{
+    display:inline-block;margin-top:10px;font-family:var(--mono);font-size:10.5px;
+    letter-spacing:.06em;color:#F0C9D0;border:1px solid rgba(240,201,208,.4);
+    border-radius:999px;padding:4px 10px;
+  }
+
+  /* ── 스펙 ────────────────────────────────────────── */
+  .spec{
+    border:1px solid var(--line);border-radius:var(--radius-m);
+    background:var(--surface);padding:16px 0 4px;
+  }
+  .spec h3{font-family:var(--display);font-weight:800;font-size:17px;letter-spacing:-.02em;margin:0 16px}
+  .spec .sub{font-size:11.5px;color:var(--muted);margin:5px 16px 12px}
+  .spec dl{margin:0;border-top:1px solid var(--line)}
+  .spec .row{
+    display:flex;align-items:baseline;justify-content:space-between;gap:10px;
+    padding:11px 16px;border-bottom:1px solid var(--line);
+  }
+  .spec .row:last-child{border-bottom:0}
+  .spec dt{font-size:12px;color:var(--muted);margin:0}
+  .spec dd{
+    margin:0;font-family:var(--display);font-weight:800;font-size:14.5px;
+    letter-spacing:-.01em;font-variant-numeric:tabular-nums;text-align:right;
+  }
+
+  .caption{
+    border:1px solid var(--line);border-radius:var(--radius-m);
+    background:var(--surface);padding:16px;margin-top:12px;
+  }
+  .caption b{font-family:var(--display);font-weight:800;font-size:16px;letter-spacing:-.015em}
+  .caption p{margin:6px 0 0;font-size:12.5px;color:var(--muted)}
+
+  .colors{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+  .swatch{
+    display:inline-flex;align-items:center;gap:7px;
+    border:1px solid var(--line);border-radius:999px;
+    padding:6px 12px 6px 7px;font-size:12px;color:#D8D2CB;background:var(--surface);
+  }
+  .swatch i{width:15px;height:15px;border-radius:50%;border:1px solid rgba(255,255,255,.22)}
+
+  .notice{
+    margin-top:18px;border-left:2px solid var(--accent);
+    padding:2px 0 2px 12px;font-size:11.5px;color:var(--muted);line-height:1.6;
+  }
+  .footnote{
+    margin-top:28px;padding-top:16px;border-top:1px solid var(--line);
+    font-size:11px;color:#6F6962;line-height:1.7;
+  }
+  .footnote a{color:#9B948C}
+
+  /* ── 하단 액션바 ─────────────────────────────────── */
+  .actionbar{
+    position:fixed;left:0;right:0;bottom:0;z-index:50;
+    padding:12px 20px calc(12px + env(safe-area-inset-bottom,0px));
+    background:linear-gradient(180deg,rgba(8,7,10,0),rgba(8,7,10,.94) 28%);
+  }
+  .actionbar .inner{max-width:460px;margin:0 auto;display:flex;gap:10px}
+  .btn{
+    font:inherit;font-family:var(--display);font-weight:800;font-size:15px;
+    letter-spacing:-.01em;border-radius:999px;padding:16px 20px;
+    border:1px solid transparent;cursor:pointer;transition:.15s;
+    text-decoration:none;text-align:center;
+  }
+  .btn:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+  .btn-ghost{background:var(--surface-2);color:#D8D2CB;border-color:var(--line-strong);flex:none;padding:16px 22px}
+  .btn-main{background:var(--text);color:var(--ink);flex:1}
+  .btn-book{background:var(--accent);color:#fff;flex:1}
+  .btn-off{background:var(--surface-2);color:#6F6962;border-color:var(--line);flex:1;cursor:default}
+  .btn:active{transform:scale(.985)}
+
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<div class="shell">
+
+  <header class="topbar">
+    <div class="story">
+      <div class="mark">다사</div>
+      <div class="story-body">
+        <div class="story-label"><b id="stepName">출시 안내</b><span id="stepNum">1 / 3</span></div>
+        <div class="segs">
+          <div class="seg now" id="s1"><i></i></div>
+          <div class="seg" id="s2"><i></i></div>
+          <div class="seg" id="s3"><i></i></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══ 1 · 출시 안내 ═════════════════════════════ -->
+  <section id="view1">
+    <div class="kicker"><em>9월 18일</em> 판매 시작</div>
+    <p class="storeline">SK텔레콤 PS&amp;M 다사점 · 대실역 도보 3분</p>
+    <h1>iPhone 18 Pro,<br>먼저 보고 결정하세요.</h1>
+    <p class="lede">화면으로 볼지, 손으로 쥐어볼지. 다사점은 두 가지 방법을 모두 준비했습니다.</p>
+
+    <div class="shot hero">
+      <img src="img/experience-zone.jpg" alt="다사점 체험존" onerror="this.remove()">
+      <div class="ph">
+        <div class="tag">Photo 01 · 4:3.2</div>
+        <div class="what">다사점 체험존</div>
+        <div class="how">img/experience-zone.jpg<br>매장 직접 촬영 · 가로 1600px 이상</div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="fact">
+        <div class="k">판매 시작</div>
+        <div class="v">9월 18일<br>금요일</div>
+        <div class="n">*다사점 현장 상담 진행 중</div>
+      </div>
+      <div class="fact">
+        <div class="k">출고가</div>
+        <div class="v">199만원<br>부터</div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <button class="nav-card orange" type="button" data-go="2">
+        <div class="top">
+          <div class="t">체험 방법</div>
+          <div class="d">온라인으로 볼까, 직접 볼까</div>
+        </div>
+        <div class="go"><span>두 가지 보기</span><span>→</span></div>
+      </button>
+      <button class="nav-card wine" type="button" data-go="3">
+        <div class="top">
+          <div class="t">모델 선택</div>
+          <div class="d">Pro · Pro Max · 색상 4종</div>
+        </div>
+        <div class="go"><span>비교해 보기</span><span>→</span></div>
+      </button>
+    </div>
+
+    <p class="notice">
+      공시지원금·선택약정·요금제 조건에 따라 실제 구매 조건이 달라질 수 있으며,
+      정확한 금액은 상담 시 안내해 드립니다.
+    </p>
+  </section>
+
+  <!-- ══ 2 · 체험 두 갈래 ═════════════════════════ -->
+  <section id="view2" hidden>
+    <p class="eyebrow">// How to experience</p>
+    <h2>두 가지 방법으로<br>만나보세요</h2>
+
+    <div class="route">
+      <div class="rt">Online</div>
+      <h3>온라인으로 둘러보기</h3>
+      <p>애플 공식 페이지에서 사양과 기능을 먼저 확인하세요. 새 창으로 열립니다.</p>
+      <ul>
+        <li><b>색상 4종</b> 고화질 이미지와 각도별 뷰</li>
+        <li><b>카메라·칩</b> 기능 설명과 촬영 샘플</li>
+        <li><b>전체 사양</b> 크기, 배터리, 저장용량</li>
+      </ul>
+      <a class="linkbtn ghost" id="appleLink" href="https://www.apple.com/kr/iphone-18-pro/" target="_blank" rel="noopener noreferrer">
+        <span>애플 공식 페이지 열기</span><span class="arr">↗</span>
+      </a>
+    </div>
+
+    <div class="gap">
+      <b>다만, 화면으로는 여기까지입니다.</b>
+      형광등 아래 버건디가 어떤 색인지, 249g이 손에서 어떤 무게인지,
+      셔터를 눌렀을 때 얼마나 빨리 반응하는지 — 이건 화면이 알려주지 못합니다.
+    </div>
+
+    <div class="route live">
+      <div class="rt">In store</div>
+      <h3>직접 보고 만져보기</h3>
+      <p>다사점 체험존에 실물이 준비되어 있습니다. 예약하시면 기다리지 않고 바로 안내받으실 수 있습니다.</p>
+      <ul>
+        <li><b>실물 색감 확인</b> 4가지 색을 나란히 놓고 비교</li>
+        <li><b>AI 사용법 1:1 코칭</b> 새 기기의 AI 기능을 직원이 직접 설정</li>
+        <li><b>요즘가족결합 통신비 진단</b> 가족 회선을 묶었을 때 월 얼마인지 즉석 계산</li>
+      </ul>
+      <a class="linkbtn solid" id="naverLink" href="#" target="_blank" rel="noopener noreferrer">
+        <span id="naverLabel">네이버로 방문 예약하기</span><span class="arr">↗</span>
+      </a>
+    </div>
+
+    <div class="apple-band">
+      <svg width="34" height="38" viewBox="0 0 34 38" aria-hidden="true">
+        <path d="M17 9c-1 0-2.2-.4-3.4-.4C7.8 8.6 3 13.6 3 21.2 3 28.4 8.2 36 13.4 36c2 0 2.8-1.1 5.3-1.1s3.1 1.1 5.2 1.1C29.4 36 34 28.6 34 21.4c0-7.6-4.9-12.8-10.6-12.8-1.3 0-2.6.4-3.6.4z" fill="#8C2C40" opacity=".92"/>
+        <path d="M17.6 8.4C17.6 4.6 20 1.4 23.4.6c.5 3.6-2.1 7.5-5.8 7.8z" fill="#3E7A4F"/>
+      </svg>
+      <div>
+        <p class="t">체험하고, 사과 한 번 따 가세요</p>
+        <p>체험 후 다사점 단골 고객으로 등록하시면 <b>사과따기 체험</b>에 참여하실 수 있습니다.
+        나무에 달린 사과를 직접 골라 따시면 됩니다 — 안에 선물이 들어 있습니다.</p>
+        <span class="cond">선물 구성 · 수량 [내용 입력]</span>
+      </div>
+    </div>
+
+    <p class="notice">
+      예약 없이 방문하셔도 체험하실 수 있습니다. 예약은 대기 없이 안내받으시라고 마련한 것입니다.
+      사과따기 체험은 수량이 한정되어 있으며 소진 시 종료될 수 있습니다.
+    </p>
+  </section>
+
+  <!-- ══ 3 · 모델 선택 ════════════════════════════ -->
+  <section id="view3" hidden>
+    <p class="eyebrow">// Model guide</p>
+    <h2>Pro와 Pro Max,<br>뭐가 다를까요?</h2>
+
+    <div class="shot wide">
+      <img src="img/color-lineup.jpg" alt="색상 4종 실물 비교" onerror="this.remove()">
+      <div class="ph">
+        <div class="tag">Photo 02 · 16:10</div>
+        <div class="what">실물 색상 비교 컷</div>
+        <div class="how">img/color-lineup.jpg<br>매장 조명 아래 4색 나란히 · 동일 각도</div>
+      </div>
+    </div>
+
+    <div class="caption">
+      <b>다른 건 화면과 배터리뿐입니다.</b>
+      <p>칩과 카메라 성능은 두 모델이 같습니다. 손에 쥐는 크기와 하루 버티는 배터리, 이 두 가지로 고르시면 됩니다.</p>
+    </div>
+
+    <div class="grid">
+      <div class="spec">
+        <h3>iPhone 18 Pro</h3>
+        <p class="sub">6.3인치 · 한 손에 들어오는 크기</p>
+        <dl>
+          <div class="row"><dt>디스플레이</dt><dd>6.3인치</dd></div>
+          <div class="row"><dt>저장용량</dt><dd>256GB~2TB</dd></div>
+          <div class="row"><dt>출고가</dt><dd>199만원~</dd></div>
+        </dl>
+      </div>
+      <div class="spec">
+        <h3>iPhone 18 Pro Max</h3>
+        <p class="sub">6.9인치 · 화면과 배터리 우선</p>
+        <dl>
+          <div class="row"><dt>디스플레이</dt><dd>6.9인치</dd></div>
+          <div class="row"><dt>저장용량</dt><dd>256GB~2TB</dd></div>
+          <div class="row"><dt>출고가</dt><dd>219만원~</dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="colors">
+      <span class="swatch"><i style="background:#1A1A1C"></i>블랙</span>
+      <span class="swatch"><i style="background:#E9E9E7"></i>실버</span>
+      <span class="swatch"><i style="background:#C3D3E8"></i>글레이셔</span>
+      <span class="swatch"><i style="background:#6E2233"></i>버건디</span>
+    </div>
+
+    <p class="notice">
+      출고가는 256GB 기준입니다(iPhone 18 Pro 1,990,000원 / Pro Max 2,190,000원부터).
+      실제 구매가는 공시지원금·선택약정·요금제 조건에 따라 변동됩니다.
+      색상 표현은 화면에 따라 실물과 차이가 있습니다 — 그래서 매장에서 직접 보시는 편이 정확합니다.
+    </p>
+
+    <p class="footnote">
+      SK텔레콤 PS&amp;M 다사점 · 대구 달성군 다사읍 · 대실역 도보 3분<br>
+      <span id="telLine" hidden>전화 <a id="telLink" href="#"></a><br></span>
+      제품 이미지 및 사양 정보는 Apple 공식 웹사이트에서 확인하실 수 있습니다.
+    </p>
+  </section>
+
+</div>
+
+<div class="actionbar">
+  <div class="inner">
+    <button class="btn btn-ghost" id="back" type="button" hidden>← 이전</button>
+    <button class="btn btn-main" id="next" type="button">체험 방법 보기 →</button>
+    <a class="btn btn-book" id="book" href="#" target="_blank" rel="noopener noreferrer" hidden>방문 예약하기 ↗</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  /* ════════════════════════════════════════════════════
+     여기 세 줄만 채우면 됩니다
+     ════════════════════════════════════════════════════ */
+  var LINKS = {
+    apple : "https://www.apple.com/kr/iphone-18-pro/",
+    naver : "",          // ← 네이버 예약 URL
+    tel   : ""           // ← 매장 전화번호 (예: "053-000-0000"), 비워두면 표시 안 됨
+  };
+  /* ════════════════════════════════════════════════════ */
+
+  var step  = 1;
+  var names = {1:"출시 안내", 2:"체험 방법", 3:"모델 선택"};
+  var views = [1,2,3].map(function(n){ return document.getElementById("view"+n); });
+  var segs  = [document.getElementById("s1"), document.getElementById("s2"), document.getElementById("s3")];
+  var back  = document.getElementById("back");
+  var next  = document.getElementById("next");
+  var book  = document.getElementById("book");
+
+  document.getElementById("appleLink").href = LINKS.apple;
+
+  // 네이버 예약 링크 연결 (없으면 비활성 상태로 표시)
+  var naverLink  = document.getElementById("naverLink");
+  var naverLabel = document.getElementById("naverLabel");
+  if (LINKS.naver) {
+    naverLink.href = LINKS.naver;
+    book.href = LINKS.naver;
+  } else {
+    naverLink.removeAttribute("href");
+    naverLink.classList.remove("solid");
+    naverLink.classList.add("off");
+    naverLabel.textContent = "예약 링크 준비 중";
+    book.removeAttribute("href");
+    book.classList.remove("btn-book");
+    book.classList.add("btn-off");
+    book.textContent = "예약 링크 준비 중";
+  }
+
+  // 매장 전화번호
+  if (LINKS.tel) {
+    var t = document.getElementById("telLink");
+    t.href = "tel:" + LINKS.tel.replace(/[^0-9+]/g, "");
+    t.textContent = LINKS.tel;
+    document.getElementById("telLine").hidden = false;
+  }
+
+  function render(){
+    views.forEach(function(v, i){ v.hidden = (i + 1 !== step); });
+    document.getElementById("stepName").textContent = names[step];
+    document.getElementById("stepNum").textContent  = step + " / 3";
+
+    segs.forEach(function(el, i){
+      el.className = "seg" + (i + 1 < step ? " done" : (i + 1 === step ? " now" : ""));
+    });
+
+    back.hidden = (step === 1);
+
+    if (step === 1)      { next.hidden = false; next.textContent = "체험 방법 보기 →"; book.hidden = true; }
+    else if (step === 2) { next.hidden = false; next.textContent = "모델 비교하기 →"; book.hidden = true; }
+    else                 { next.hidden = true;  book.hidden = false; }
+
+    window.scrollTo(0, 0);
+  }
+
+  document.querySelectorAll("[data-go]").forEach(function(b){
+    b.addEventListener("click", function(){ step = +b.dataset.go; render(); });
+  });
+  back.addEventListener("click", function(){ if (step > 1) { step--; render(); } });
+  next.addEventListener("click", function(){ if (step < 3) { step++; render(); } });
+
+  render();
+})();
+</script>
+</body>
+</html>
